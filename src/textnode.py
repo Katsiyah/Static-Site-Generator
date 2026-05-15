@@ -28,7 +28,6 @@ class TextNode():
 
 def text_node_to_html_node(text_node):
     match text_node.text_type:
-    #tag, value, props=None
         case TextType.TEXT:
             return LeafNode(None, text_node.text)
         case TextType.BOLD:
@@ -45,3 +44,6 @@ def text_node_to_html_node(text_node):
         case _:
             raise Exception("Is not a valid HTML conversion")
         
+
+
+

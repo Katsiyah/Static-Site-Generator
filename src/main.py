@@ -1,8 +1,7 @@
-from textnode import *
+from generator import clear_and_create_public
 
 
 def main():
-    new = TextNode("hello world", TextType("bold"), "http")
-    print(new)
+    clear_and_create_public()
 
 main()
